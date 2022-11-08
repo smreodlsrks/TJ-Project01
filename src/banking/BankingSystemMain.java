@@ -9,6 +9,8 @@ public class BankingSystemMain {
 
 	public static void main(String[] args) {		
 		
+		System.out.println("1차 프로젝트(학원)");
+		
 		AccountManager manager = new AccountManager();
 		AutoSaver as = new AutoSaver(manager);
 		
