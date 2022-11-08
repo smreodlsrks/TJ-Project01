@@ -31,6 +31,7 @@ class AutoSaver extends Thread {
 //				System.out.println("자동저장이 실행중입니다..");			
 			}					
 			catch(InterruptedException e) {
+				System.out.println("자동저장을 종료합니다.");
 				return;
 			}
 			catch(Exception e) {
