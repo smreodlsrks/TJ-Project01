@@ -20,8 +20,9 @@ class AccountManager {
 		System.out.print("  2. 입    금");
 		System.out.println("  3. 출    금");
 		System.out.print("4. 계좌정보 출력");
-		System.out.println("  5. 자동저장옵션 설정");
-		System.out.println("6. 프로그램 종료");
+		System.out.println("  5. 3by3 게  임");
+		System.out.print("6. 자동저장옵션 설정");
+		System.out.println("  7. 프로그램 종료");
 		System.out.print("선택 : ");		
 	}
 	

@@ -3,6 +3,8 @@ package banking;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import game.Game3by3;
+
 public class BankingSystemMain {	
 
 	public static void main(String[] args) {		
@@ -17,7 +19,7 @@ public class BankingSystemMain {
 			try {
 				manager.showMenu();			
 				int choice = scanner.nextInt();
-				if(choice<1 || choice>6) {
+				if(choice<1 || choice>7) {
 					MenuSelectException e = new MenuSelectException();
 					throw e;					
 				}
@@ -25,7 +27,7 @@ public class BankingSystemMain {
 		
 				switch(choice) {
 				case ICustomDefine.MAKE:
-					manager.addAccounts();
+					manager.addAccounts();					
 					break;
 				case ICustomDefine.DEPOSIT:
 					manager.depositMoney();
@@ -36,6 +38,9 @@ public class BankingSystemMain {
 				case ICustomDefine.INQUIRE:
 					manager.showAccInfo();
 					break;
+				case ICustomDefine.GAME:
+					new Game3by3().play();
+					break;					
 				case ICustomDefine.AUTOSAVE:
 					manager.autoSave(as);					
 					break;
